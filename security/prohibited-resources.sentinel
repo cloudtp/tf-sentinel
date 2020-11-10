@@ -6,7 +6,7 @@
 import "tfconfig-functions" as config
 
 # List of prohibited resources
-prohibited_list = ["azurerm_virtual_network"]
+prohibited_list = ["azurerm_virtual_network", "null_resource"]
 
 # Get all Resources
 allResources = config.find_all_resources()
