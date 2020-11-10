@@ -16,41 +16,41 @@ module "tfrun-functions" {
 
 
 policy "prohibited-providers" {
-  source = "./prohibited-providers.sentinel"
+  source = "./security/prohibited-providers.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "prohibited-provisioners" {
-  source = "./prohibited-provisioners.sentinel"
+  source = "./security/prohibited-provisioners.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "prohibited-resources" {
-  source = "./prohibited-resources.sentinel"
+  source = "./security/prohibited-resources.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "prevent-remote-exec-provisioners-on-null-resources" {
-  source = "./prevent-remote-exec-provisioners-on-null-resources.sentinel"
+  source = "./security/prevent-remote-exec-provisioners-on-null-resources.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "validate-variables-have-descriptions" {
-  source = "./validate-variables-have-descriptions.sentinel"
+  source = "./security/validate-variables-have-descriptions.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "allowed-providers" {
-  source = "./allowed-providers.sentinel"
+  source = "./security/allowed-providers.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "allowed-provisioners" {
-  source = "./allowed-provisioners.sentinel"
+  source = "./security/allowed-provisioners.sentinel"
   enforcement_level = "soft-mandatory"
 }
 
 policy "allowed-resources" {
-  source = "./allowed-resources.sentinel"
+  source = "./security/allowed-resources.sentinel"
   enforcement_level = "soft-mandatory"
 }
